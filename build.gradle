@@ -4,7 +4,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.mparticle:android-kit-plugin:' + project.version
+        classpath 'com.mparticle:android-kit-plugin:4.16.7'
     }
 }
 
@@ -22,6 +22,7 @@ android {
 }
 
 dependencies {
+    compile 'com.mparticle:android-kit-base:4.16.7'
     compile 'com.urbanairship.android:urbanairship-sdk:8.9.0'
     testCompile 'junit:junit:4.12'
     testCompile  files('libs/java-json.jar')
